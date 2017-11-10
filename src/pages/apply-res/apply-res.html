@@ -7,12 +7,27 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>ApplyRes</ion-title>
+    <ion-title>Apply Res</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding>
+<ion-item>
+  <ion-label floating>Surname</ion-label>
+  <ion-input [(ngModel)]="surname"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label floating>Student Number</ion-label>
+  <ion-input [(ngModel)]="studentNumber"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label floating>level</ion-label>
+  <ion-input [(ngModel)]="level"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label floating>Buidling name</ion-label>
+  <ion-input [(ngModel)]="building"></ion-input>
+</ion-item>
+<button ion-button (click)="onClick_Submit()" round block>Submit</button>
 
 </ion-content>

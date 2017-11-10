@@ -5,6 +5,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ApplyResPage} from '../pages/apply-res/apply-res';
 import { RegisterPage} from '../pages/register/register';
 import { HomePage } from '../pages/home/home';
+import {AcademicPage} from '../pages/academic/academic';
+import { PreviewPage } from '../pages/preview/preview';
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -15,8 +18,11 @@ export class MyApp {
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     this.pages = [{ title: 'home', component: HomePage },
-                  { title: 'Personal', component: RegisterPage }, 
-                 { title: 'res', component: ApplyResPage }];
+                  { title: 'Personal', component: RegisterPage },
+                  { title: 'academic', component: AcademicPage }, 
+                 { title: 'res', component: ApplyResPage },
+                 { title: 'Preview', component: PreviewPage },
+                ];
     platform.ready().then(() => { 
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.

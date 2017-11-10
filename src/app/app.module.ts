@@ -8,7 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { RegisterPage } from '../pages/register/register';
 import { PreviewPage } from '../pages/preview/preview';
-import { MenuPage } from '../pages/menu/menu';
+import { AcademicPage } from '../pages/academic/academic';
 import { ApplyResPage} from '../pages/apply-res/apply-res';
 
 @NgModule({
@@ -17,8 +17,8 @@ import { ApplyResPage} from '../pages/apply-res/apply-res';
     HomePage,
     RegisterPage,
     PreviewPage,
-    MenuPage,
-    ApplyResPage
+    AcademicPage,
+    ApplyResPage 
   ],
   imports: [
     BrowserModule,
@@ -30,7 +30,7 @@ import { ApplyResPage} from '../pages/apply-res/apply-res';
     HomePage,
     RegisterPage,
     PreviewPage,
-    MenuPage,
+    AcademicPage,
     ApplyResPage
   ],
   providers: [

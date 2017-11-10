@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PreviewPage } from '../preview/preview';
+import { AcademicPage } from '../academic/academic';
 
 /**
  * Generated class for the RegisterPage page.
@@ -27,8 +28,8 @@ export class RegisterPage {
 
   
   public onClick_Submit(){
+    this.navCtrl.push(AcademicPage);
 
-    this.navCtrl.push(PreviewPage, { 'name': this.name, 'surname': this.surname, 'studentNumber': this.studentNumber, 'id': this.idNumber });
 
  }
 
