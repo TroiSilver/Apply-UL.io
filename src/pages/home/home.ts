@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { RegisterPage } from '../register/register';
+import { MenuPage} from '../menu/menu';
+
 
 @Component({
   selector: 'page-home',
@@ -14,7 +15,7 @@ export class HomePage {
   }
 
   public onClick_RegisterPage(){
-    this.navCtrl.push(RegisterPage);
+    this.navCtrl.push(MenuPage);
   }
 
 

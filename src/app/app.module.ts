@@ -8,13 +8,17 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { RegisterPage } from '../pages/register/register';
 import { PreviewPage } from '../pages/preview/preview';
+import { MenuPage } from '../pages/menu/menu';
+import { ApplyResPage} from '../pages/apply-res/apply-res';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     RegisterPage,
-    PreviewPage
+    PreviewPage,
+    MenuPage,
+    ApplyResPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,9 @@ import { PreviewPage } from '../pages/preview/preview';
     MyApp,
     HomePage,
     RegisterPage,
-    PreviewPage
+    PreviewPage,
+    MenuPage,
+    ApplyResPage
   ],
   providers: [
     StatusBar,
